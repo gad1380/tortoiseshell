@@ -1,13 +1,22 @@
 html {
   font-size: 18px;
   line-height: 1.4px;
+  font-family: helvetica;
 }
 .container{
   display: flex;
-  flex-direction: column;
   width: 960px;
   height: auto;
 }
+.header .container {
+  flex-direction: column;
+}
+.about .container {
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+
 
 .header {
   display: flex;
@@ -69,22 +78,85 @@ html {
   margin: 1.5rem 5rem;
 }
 
+
+
+
 .services {
-  display: inline-flex;
-  height: 20rem;
-  width: 100%;
-  justify-content: center;
-  margin: 3rem 0rem;
-}
-
-}
-.tile {
   display: flex;
-  height: 8rem;
-  width: 8rem;
-  border: 1px solid red;
+  width: 100%;
+  height: auto;
+  justify-content: center;
 }
-.icon {
 
+.service {
+  display: flex;
+  margin: 3rem;
+  height: 8rem;
+  width: 5rem;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  align-content: space-between;
 }
-.text
+.paper-icon {
+  width: 3rem;
+}
+.ruler-icon {
+  width: 5rem;
+}
+.truck-icon {
+  width: 5rem;
+}
+
+
+
+
+.about {
+  display: flex;
+  height: auto;
+  justify-content: center;
+}
+.about-child {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  display: flex;
+  width: 35%;
+  height: auto;
+  margin-right: 5%;
+}
+.about-title {
+  display: block;
+  padding: 0.5rem 1.25rem;
+  background-color: cadetblue;
+  justify-content: center;
+  color: white;
+}
+.about-text {
+  display: flex;
+  margin-top: 1rem;
+}
+p {
+  line-height: 1.4;
+}
+
+
+footer {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+}
+footer .container {
+  background-color: azure;
+
+  height: 10rem;
+}
+.footer-logo {
+  display: flex;
+  height: auto;
+  align-items: center;
+}
+.footer-logo img {
+  height: 1.5rem;
+  padding: 4rem 1rem 4rem 4rem;
